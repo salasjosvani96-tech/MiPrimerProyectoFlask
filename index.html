@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera aplicación en Flask</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="{{ url_for('inicio') }}">Inicio</a>
+        <a href="{{ url_for('acerca') }}">Acerca</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>Buena alimentación</h1>
+        <p>
+            Bienvenido a nuestro sistema de compromiso a la buena salúd
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Come saludable</h2>
+            <p>
+                Consulta las citas medicas con nuestro nutriologo
+            </p>
+        </section>
+        <section class=""actividades>
+            <article>
+                <h3>Plato del buen comer 🍽️</h3>
+                <p>Conocer los grupos de alimentos y combinarlos adecuadamente.</p>
+            </article>
+            <article>
+                <h3>Alimentación equilibrada 🍅</h3>
+                <p>Consumir alimentos variados y nutritivos en cantidades adecuadas</p>
+            </article>
+            <article>
+                <h3>Hidratación saludable 💧</h3>
+                <p>Tomar suficiente agua y mantener buenos hábitos alimenticios.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Proyecto desarrollado con Python y Flask</p>
+    </footer>
+    
+</body>
+</html>
